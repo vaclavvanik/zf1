@@ -61,8 +61,6 @@ class Zend_AllTests
 
         // These tests require no output be sent prior to running as they rely
         // on internal PHP functions
-        $suite->addTestSuite('Zend_OpenIdTest');
-        $suite->addTest(Zend_OpenId_AllTests::suite());
         $suite->addTest(Zend_Session_AllTests::suite());
         $suite->addTest(Zend_Soap_AllTests::suite());
 
@@ -102,7 +100,7 @@ class Zend_AllTests
         $suite->addTest(Zend_Db_AllTests::suite());
         $suite->addTestSuite('Zend_DebugTest');
         $suite->addTest(Zend_Dom_AllTests::suite());
-        $suite->addTest(Zend_EventManager_AllTests::suite());
+        $suite->addTest(Zend_Stdlib_AllTests::suite());
         $suite->addTestSuite('Zend_ExceptionTest');
         $suite->addTest(Zend_Feed_AllTests::suite());
         $suite->addTest(Zend_File_AllTests::suite());
