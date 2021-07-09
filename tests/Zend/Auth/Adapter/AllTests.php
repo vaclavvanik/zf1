@@ -63,7 +63,6 @@ class Zend_Auth_Adapter_AllTests
         $suite->addTestSuite('Zend_Auth_Adapter_DigestTest');
         $suite->addTest(Zend_Auth_Adapter_Http_AllTests::suite());
         $suite->addTest(Zend_Auth_Adapter_Ldap_AllTests::suite());
-        $suite->addTest(Zend_Auth_Adapter_OpenId_AllTests::suite());
 
         return $suite;
     }
